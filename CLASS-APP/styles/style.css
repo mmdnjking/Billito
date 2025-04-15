@@ -1,0 +1,123 @@
+@import url(./fonts.css);
+
+:root
+{
+    --Primary : #1D91CC;
+    --white : #ffffff;
+    --Tint1 : #E8F4FA;
+    --Shade1 : #1774A3;
+    --Gray1 : #F9F9F9;
+    --Gray7 : #606060;
+    --Black : #0C0C0C;
+    --Error : #C30000;
+    --Success : #00966D;
+    --Warning : #A9791C;
+    --none : #ffffff00;
+}
+html
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*,*::after,*::before
+{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+body
+{
+    line-height: 1.6;
+    font-size: 1.25rem;
+    font-family: "Iranian-Sans";
+}
+.container
+{
+    width: 100%;
+    padding: 1.2% 4%; /*padding up & dawn , right & left*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Tint1);
+}
+/*helper class*/
+.non-background_button
+{
+    color: var(--Gray7) !important;
+    background-color: var(--none) !important;
+}
+/*reset styles*/
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-warpper_content
+{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.header-content_image
+{
+width: 9rem;
+height: 3rem;
+cursor: pointer;
+}
+.header-menu_list
+{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.header-menu_list-item
+{
+font-size: 1.25rem;
+color: var(--Gray7);
+cursor: pointer;
+}
+.header-warpper_buttons
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.header-button
+{
+    font-size: 1.s25rem;
+    align-items: center;
+    display: flex;
+    font-family: "Iranian-Sans";
+    background-color: var(--Primary);
+    color: var(--white);
+    border: none;
+    border-radius: 1rem;
+    height: 2.90rem;
+    cursor: pointer;
+}
+.btn-active
+{
+    color: var(--Primary);
+    font-weight: bold;
+    position: relative;
+}
+.btn-active::before
+{
+    content: ' ';
+    position: absolute;
+    width: 6.5rem;
+    height: 0.1rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: var(--Primary);
+}
+.header-content
+{
+    background-image: ;
+}
